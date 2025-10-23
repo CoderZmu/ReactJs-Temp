@@ -1,4 +1,4 @@
-import { emitEvent, isTMA, mockTelegramEnv } from '@telegram-apps/sdk-react';
+import { isTMA, mockTelegramEnv } from '@telegram-apps/sdk-react';
 
 // It is important, to mock the environment only for development purposes. When building the
 // application, import.meta.env.DEV will become false, and the code inside will be tree-shaken,
@@ -20,10 +20,8 @@ if (import.meta.env.DEV) {
       subtitle_text_color: '#708499',
       text_color: '#f5f5f5',
     } as const;
-    const noInsets = { left: 0, top: 0, bottom: 0, right: 0 } as const;
-
     mockTelegramEnv({
-      onEvent(e) {
+      onEvent() {
         // Here you can write your own handlers for all known Telegram Mini Apps methods:
         // https://docs.telegram-mini-apps.com/platform/methods
         // if (e.name === 'web_app_request_theme') {

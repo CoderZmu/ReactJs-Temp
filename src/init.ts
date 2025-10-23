@@ -4,10 +4,6 @@ import {
   initData,
   viewport,
   init as initSDK,
-  mockTelegramEnv,
-  type ThemeParams,
-  retrieveLaunchParams,
-  emitEvent,
   miniApp,
   backButton,
 } from '@telegram-apps/sdk-react';
