@@ -11,7 +11,7 @@ importers:
       '@telegram-apps/telegram-ui':
         specifier: ^2.1.9
         version: 2.1.13(@types/react-dom@18.3.7(@types/react@18.3.26))(@types/react@18.3.26)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@tma.js/sdk-react':
+      '@telegram-apps/sdk-react':
         specifier: ^3.0.4
         version: 3.0.4(@types/react@18.3.26)(react@18.3.1)(typescript@5.9.3)
       '@tonconnect/ui-react':
@@ -719,7 +719,7 @@ packages:
   '@tma.js/bridge@2.1.2':
     resolution: {integrity: sha512-aAkHT7qhiEcr8uzoUaK0yI20eTz2EKw2+h21WkCmFmeyRLM0xPcwffUWQNpH9LR0bVuO/LMX/7ntsf9WOCYimw==}
 
-  '@tma.js/sdk-react@3.0.4':
+  '@telegram-apps/sdk-react@3.0.4':
     resolution: {integrity: sha512-OQFcxcJ0Vkel4kHrKs/MjyT3fmegHrzBKRiLX7ZIyxEG9aERXrvQQuvYTvUvyrvsbKEewTuNbyRXoIxM18HPaA==}
     peerDependencies:
       '@types/react': ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -2597,7 +2597,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  '@tma.js/sdk-react@3.0.4(@types/react@18.3.26)(react@18.3.1)(typescript@5.9.3)':
+  '@telegram-apps/sdk-react@3.0.4(@types/react@18.3.26)(react@18.3.1)(typescript@5.9.3)':
     dependencies:
       '@tma.js/sdk': 3.0.4(typescript@5.9.3)
       react: 18.3.1

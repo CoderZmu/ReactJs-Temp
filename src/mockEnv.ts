@@ -1,4 +1,4 @@
-import { emitEvent, isTMA, mockTelegramEnv } from '@tma.js/sdk-react';
+import { emitEvent, isTMA, mockTelegramEnv } from '@telegram-apps/sdk-react';
 
 // It is important, to mock the environment only for development purposes. When building the
 // application, import.meta.env.DEV will become false, and the code inside will be tree-shaken,
@@ -26,23 +26,23 @@ if (import.meta.env.DEV) {
       onEvent(e) {
         // Here you can write your own handlers for all known Telegram Mini Apps methods:
         // https://docs.telegram-mini-apps.com/platform/methods
-        if (e.name === 'web_app_request_theme') {
-          return emitEvent('theme_changed', { theme_params: themeParams });
-        }
-        if (e.name === 'web_app_request_viewport') {
-          return emitEvent('viewport_changed', {
-            height: window.innerHeight,
-            width: window.innerWidth,
-            is_expanded: true,
-            is_state_stable: true,
-          });
-        }
-        if (e.name === 'web_app_request_content_safe_area') {
-          return emitEvent('content_safe_area_changed', noInsets);
-        }
-        if (e.name === 'web_app_request_safe_area') {
-          return emitEvent('safe_area_changed', noInsets);
-        }
+        // if (e.name === 'web_app_request_theme') {
+        //   return emitEvent('theme_changed', { theme_params: themeParams });
+        // }
+        // if (e.name === 'web_app_request_viewport') {
+        //   return emitEvent('viewport_changed', {
+        //     height: window.innerHeight,
+        //     width: window.innerWidth,
+        //     is_expanded: true,
+        //     is_state_stable: true,
+        //   });
+        // }
+        // if (e.name === 'web_app_request_content_safe_area') {
+        //   return emitEvent('content_safe_area_changed', noInsets);
+        // }
+        // if (e.name === 'web_app_request_safe_area') {
+        //   return emitEvent('safe_area_changed', noInsets);
+        // }
       },
       launchParams: new URLSearchParams([
         // Discover more launch parameters:
